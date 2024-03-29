@@ -54,7 +54,10 @@
         <button type="submit" onclick="deleteComment();">삭제</button>
     </span>
     <div class="content" th:text="${comment.content}">댓글 내용이 들어갑니다.</div>
-    <div class="contentTime" th:text="${comment.createdAt}">댓글 시간 들어갑니다.</div>
+<!--    <div class="contentTime" th:text="${comment.createdAt}">댓글 시간 들어갑니다.</div>-->
+<!--    <div class="contentTime" th:text="${#dates.format(comment.createdAt, 'yyyy.MM.dd HH:mm')}">댓글 시간 들어갑니다.</div>-->
+    <div class="contentTime" th:text="${comment.createdAt.year + '.' + comment.createdAt.monthValue + '.' + comment.createdAt.dayOfMonth + ' ' + comment.createdAt.hour + ':' + comment.createdAt.minute}">댓글 시간 들어갑니다.</div>
+
 
 
 </div>

@@ -13,51 +13,6 @@ body {
     margin: auto;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-    border-bottom: 1px solid #ccc;
-}
-
-.left {
-    display: flex;
-    align-items: center;
-}
-
-.left button{
-    font-size: 24px; /* 웹페이지 이름 버튼의 폰트 크기 */
-    border: none;
-    background: none;
-    cursor: pointer;
-}
-
-.left img {
-    width: 50px;
-    margin-right: 10px;
-}
-
-.menu {
-    display: flex;
-    margin-left: 10px;
-}
-
-.menu button {
-    margin-right: 5px;
-    font-size: 16px;
-}
-
-/* 로그인/회원가입 버튼 스타일 */
-.right button {
-    padding: 8px 16px;
-    font-size: 14px;
-    border: none;
-    background-color: white;
-    color: black;
-    cursor: pointer; /* 마우스 포인터 모양 변경 */
-}
-
 th {
     text-align: start;
     padding: 10px 20px;

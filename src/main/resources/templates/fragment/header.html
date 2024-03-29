@@ -24,3 +24,33 @@
         <button onclick="goToURL('회원가입 URL')">회원가입</button>
     </div>
 </header>
+
+<script>
+    //사용자의 응원팀에 따라 ui 색상 변경
+    document.addEventListener("DOMContentLoaded", function() {
+        var teamColor = "blue"; // TODO: 사용자의 응원팀 색상을 가져오는 코드로 대체해야 함.
+
+        var header = document.querySelector('header');
+        var buttons = document.querySelectorAll('.left .menu button, .right button');
+
+        if (teamColor === "blue") {
+            header.style.backgroundColor = "blue"; //헤더 배경색
+            header.style.color = "white"; //웹페이지 이름 글자색
+            buttons.forEach(function(button) {
+                button.style.color = "white"; //메뉴들 글자색
+            });
+        } else if (teamColor === "red") {
+            header.style.backgroundColor = "red";//헤더 배경색
+            header.style.color = "white";//웹페이지 이름 글자색
+            buttons.forEach(function(button) {
+                button.style.color = "white";//메뉴들 글자색
+            });
+        }
+    });
+</script>
+
+
+</body>
+</html>
+
+
